@@ -6,40 +6,32 @@
     <title>google homepage</title>
 </head>
 <style>
-    h1 {
-        color: red;
-        background-color: green;
+    a {
+        color: black;
+        text-decoration: none;
     }
-    h1:hover {
-        color: yellow;
+    a:hover {
+        text-decoration: underline;
     }
-    #first_block {
-        display: block;
-        height: 50px;
-        width: 50px;
-        margin: 100px;
-        color: aqua;
-        background-color: blueviolet;
+    header {
+        display: grid;
+        background-color: silver;
     }
-    #second_block {
-        display: block;
-        background-color: brown;
-        height: 150px;
-        width: 150px;
-        border: solid;
-        border-radius: 40%;
-        border-color: rgb(0, 183, 255);
-        border-width: 10px 10px 10px 10px;
+    #gmail {
+        background-color: pink;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
-    #second_block:hover {
-        background-color: white;
-        border-color: white;
+    #images {
+        background-color: blue;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
     }
 </style>
 <body>
-    <h1>Heading bro</h1>
-    <h2>peepeepooppoo</h2>
-    <div id="first_block"></div>
-    <div id="second_block"></div>
+    <header>
+        <a class="top_right" id="gmail" href="#">Gmail</a>
+        <a class="top_right" id="images" href="#">Images</a>
+    </header>
 </body>
 </html>
